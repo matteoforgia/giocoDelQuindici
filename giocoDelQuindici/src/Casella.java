@@ -33,5 +33,5 @@ public class Casella {
     public String toString() {
         return String.valueOf(numero);
     }
-
+    
 }
