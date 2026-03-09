@@ -1,20 +1,24 @@
-public class CasellaVuota {
+public class CasellaVuota extends Casella {
     private int x;
     private int y;
-    public CasellaVuota() {
+     public CasellaVuota() {
+        super(0);
         this.x = 3;
         this.y = 3;
-        
     }
+    @Override
     public int getX() {
         return x;
     }
+    @Override
     public void setX(int x) {
         this.x = x;
     }
+    @Override
     public int getY() {
         return y;
     }
+    @Override
     public void setY(int y) {
         this.y = y;
     }
