@@ -9,5 +9,23 @@ public class GiocoDelQuindici {
                 griglia[i][j] = new Casella(i * 4 + j + 1);
             }
         }
+        private void handleImput(){
+            String key = getLastKey();
+            if (key == null) return;
+            switch (key) {
+                case "w":
+                    sposta();
+                    break;
+                case "a":
+                    sposta("a");
+                    break;
+                case "s":
+                    sposta("s");
+                    break;
+                case "d":
+                    sposta("d");
+                    break;
+            }
+        }
     }
 }
